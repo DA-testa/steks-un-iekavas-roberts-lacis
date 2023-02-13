@@ -13,7 +13,7 @@ def find_mismatch(text):
     opening_brackets_stack = []
     for i, next in enumerate(text):
         if next in "([{":
-            # ABADSFIWEJGOFWEH
+            # ESMU LABS
             pass
 
         if next in ")]}":
