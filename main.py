@@ -32,15 +32,10 @@ def find_mismatch(text):
 
 def main():
     var = input()
-    if var == "I":
-        text = input()
-    elif var == "F":
-        text = "test"
-    else:
-        print("Wrong syntax")
-        return
-    mismatch = find_mismatch(text)
-    print(mismatch)
+    text = input()
+    print(text)
+    #mismatch = find_mismatch(text)
+    #print(mismatch)
 
 
 if __name__ == "__main__":
