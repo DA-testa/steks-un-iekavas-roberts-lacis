@@ -31,10 +31,16 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
-    print(text)
+    var = input()
+    if var == "I":
+        text = input()
+    elif var == "F":
+        print("Path >>")
+        path = input()
+        f = open(path, "r")
+        text = f.read()
     mismatch = find_mismatch(text)
-    #print(mismatch)
+    print(mismatch)
 
 
 if __name__ == "__main__":
