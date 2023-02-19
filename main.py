@@ -36,8 +36,8 @@ def main():
     var = input()
     a=input()
     text=""
-    #if var == "I":
-     #   text = input()    
+    if var == "I":
+        text = input()    
 #    else:                                                                  //GITHUB neatbalsta TKinter
 #        file_path_string = filedialog.askopenfilename()
 #        file = open(file_path_string)
