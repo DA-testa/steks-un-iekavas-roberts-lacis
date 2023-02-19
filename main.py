@@ -34,16 +34,14 @@ def find_mismatch(txt):
 
 def main():
     var = input()
-    text=""
     if var == "I":
-        print("test")
         text = input()    
 #    else:                                                                  //GITHUB neatbalsta TKinter
 #        file_path_string = filedialog.askopenfilename()
 #        file = open(file_path_string)
 #        text = file.read()
     mismatch = find_mismatch(text)
-    print(var)
+    print(mismatch)
 
 
 if __name__ == "__main__":
