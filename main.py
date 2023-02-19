@@ -1,8 +1,7 @@
 # python3
 
 from collections import namedtuple
-#from tkinter import filedialog     //Importējam TKinter lai izmantotu failu atvēršanas dialogu. Komentēts, jo github neatbalsta TKinter
-
+#from tkinter import filedialog                             //GITHUB NEATBALSTA TKINTER
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
@@ -11,9 +10,9 @@ def are_matching(left, right):
     return (left + right) in ["()", "[]", "{}"]
 
 
-def find_mismatch(txt):
+def find_mismatch(text):
     opening_brackets_stack = []
-    for i, next in enumerate(txt):
+    for i, next in enumerate(text):
         if next in "([{":
             opening_brackets_stack.append(next)
             pass
@@ -28,7 +27,7 @@ def find_mismatch(txt):
                 return i+1
             pass
     if len(opening_brackets_stack) != 0:
-        return txt.find(opening_brackets_stack[0])+1
+        return text.find(opening_brackets_stack[0])+1
     return "Success"
 
 
@@ -36,6 +35,10 @@ def main():
     var = input()
     if var == "I":
         text = input()
+#    elif var == "F":
+#        file_str = filedialog.askopenfilename()
+#        file = open(file_str)
+#        text = file.read()
     mismatch = find_mismatch(text)
     print(mismatch)
 
