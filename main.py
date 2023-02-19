@@ -34,8 +34,10 @@ def find_mismatch(txt):
 
 def main():
     var = input()
-    if var == "I":
-        text = input()    
+    a=input()
+    text=""
+    #if var == "I":
+     #   text = input()    
 #    else:                                                                  //GITHUB neatbalsta TKinter
 #        file_path_string = filedialog.askopenfilename()
 #        file = open(file_path_string)
