@@ -11,9 +11,9 @@ def are_matching(left, right):
     return (left + right) in ["()", "[]", "{}"]
 
 
-def find_mismatch(text):
+def find_mismatch(txt):
     opening_brackets_stack = []
-    for i, next in enumerate(text):
+    for i, next in enumerate(txt):
         if next in "([{":
             opening_brackets_stack.append(next)
             pass
@@ -28,7 +28,7 @@ def find_mismatch(text):
                 return i+1
             pass
     if len(opening_brackets_stack) != 0:
-        return text.find(opening_brackets_stack[0])+1
+        return txt.find(opening_brackets_stack[0])+1
     return "Success"
 
 
