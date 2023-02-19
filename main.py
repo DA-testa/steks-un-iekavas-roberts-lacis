@@ -42,7 +42,8 @@ def main():
 #        file = open(file_path_string)
 #        text = file.read()
     mismatch = find_mismatch(text)
-    print(mismatch)
+
+    print(text)
 
 
 if __name__ == "__main__":
