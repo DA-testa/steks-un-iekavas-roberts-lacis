@@ -1,7 +1,7 @@
 # python3
 
 from collections import namedtuple
-from tkinter import filedialog
+#from tkinter import filedialog     //Importējam TKinter lai izmantotu failu atvēršanas dialogu. Komentēts, jo github neatbalsta TKinter
 
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -36,10 +36,10 @@ def main():
     var = input()
     if var == "I":
         text = input()    
-    else:
-        file_path_string = filedialog.askopenfilename()
-        file = open(file_path_string)
-        text = file.read()
+#    else:                                                                  //GITHUB neatbalsta TKinter
+#        file_path_string = filedialog.askopenfilename()
+#        file = open(file_path_string)
+#        text = file.read()
     mismatch = find_mismatch(text)
     print(mismatch)
 
