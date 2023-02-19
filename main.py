@@ -35,11 +35,7 @@ def find_mismatch(txt):
 def main():
     var = input()
     if var == "I":
-        text = input()    
-#    else:                                                                  //GITHUB neatbalsta TKinter
-#        file_path_string = filedialog.askopenfilename()
-#        file = open(file_path_string)
-#        text = file.read()
+        text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
 
