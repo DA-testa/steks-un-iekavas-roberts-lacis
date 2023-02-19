@@ -1,6 +1,8 @@
 # python3
 
 from collections import namedtuple
+from tkinter import filedialog
+
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
@@ -33,12 +35,11 @@ def find_mismatch(text):
 def main():
     var = input()
     if var == "I":
-        text = input()
-    elif var == "F":
-        print("Path >>")
-        path = input()
-        f = open(path, "r")
-        text = f.read()
+        text = input()    
+    else:
+        file_path_string = filedialog.askopenfilename()
+        file = open(file_path_string)
+        text = file.read()
     mismatch = find_mismatch(text)
     print(mismatch)
 
