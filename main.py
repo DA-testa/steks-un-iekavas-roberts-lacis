@@ -36,6 +36,7 @@ def main():
     var = input()
     text=""
     if var == "I":
+        print("test")
         text = input()    
 #    else:                                                                  //GITHUB neatbalsta TKinter
 #        file_path_string = filedialog.askopenfilename()
